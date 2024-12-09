@@ -21,19 +21,23 @@
             background-color: black;
             color: white;
             display: grid;
-            grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
-            font-size: 20px;
+            grid-template-columns: 6fr 6fr;
+            font-size: 13px;
             font-family: Arial;
             padding: 100px;
+            /* border-top: 2px solid gray; */
         }
 
+        /* footer div {
+            border-bottom: 2px solid gray;
+        } */
         .footer-title~span {
             display: block;
             margin-bottom: 5px;
         }
 
         .footer-title {
-            font-size: 25px;
+            font-size: 20px;
             color: grey;
             margin-bottom: 15px;
             margin-top: 10px;
@@ -63,6 +67,18 @@
         }
         .search-bar{
             border: 1px solid black;
+        }
+
+        .column-left{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+
+        .column-right{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            border-left: 2px solid gray;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -107,6 +123,7 @@
     </section>
 
     <footer>
+        <div class="column-left">
         <div>
             <div class="footer-title">ABOUT</div>
             <span>Contact Us</span>
@@ -140,6 +157,9 @@
             <span>Grievance Redressal</span>
             <span>EPR Compliance</span>
         </div>
+        </div>
+
+        <div class="column-right">
         <div>
             <div class="footer-title">Mail Us:</div>
             <span>Flipkart Internet Private Limited, Buildings Alyssa, Begonia & CLove Embassy Tech Village, Outer Ring
@@ -157,6 +177,7 @@
                 Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India CIN : U51109KA2012PTC066107
                 Telephone: <span class="phn-num">044-45614700</span> / <span class="phn-num">044-67415800</span></span>
         </div>
+    </div>
     </footer>
 </body>
 
