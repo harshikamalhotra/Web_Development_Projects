@@ -27,10 +27,6 @@
             padding: 100px;
         }
 
-        .bi-search{
-            padding-right: 50px;
-            gap: 20px;
-        }
         .footer-title~span {
             display: block;
             margin-bottom: 5px;
@@ -60,6 +56,14 @@
             font-family:Cambria;
             color: blue;
         }
+        .search{
+            width: 400px;
+            height: 30px;
+            border: none;
+        }
+        .search-bar{
+            border: 1px solid black;
+        }
     </style>
 </head>
 
@@ -75,9 +79,10 @@
                     <span class="bi bi-patch-plus-fill"></span>
                 </div>
             </div>
-            <div class="bi bi-search"></div>
-            <div>
-                <textarea name="" id="search_name" cols="60" rows="2">Search for Products, Brand and More</textarea>
+            
+            <div class="search-bar">
+                <span class="bi bi-search"></span>
+                <input type="text" placeholder="Search for product" width="" class="search">
             </div>
             <div>
                 <span class="bi bi-person"></span>
